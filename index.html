@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison de Curry - おしゃれな欧風カレー専門店</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Noto+Sans+JP:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <h1>Maison de Curry</h1>
+                <p class="tagline">- Cuisine Élégante -</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">コンセプト</a></li>
+                    <li><a href="#menu">メニュー</a></li>
+                    <li><a href="#chef">シェフ</a></li>
+                    <li><a href="#gallery">ギャラリー</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                    <li><a href="#reservation" class="btn-reservation">ご予約</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>伝統と革新が織りなす<br>至高の欧風カレー体験</h2>
+            <p>フランス料理の技法と厳選されたスパイスが織りなす、唯一無二のカレー体験をあなたに</p>
+            <a href="#reservation" class="btn">ご予約はこちら</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Notre Concept<span>コンセプト</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Maison de Curryは、フランス料理の伝統的な技法と、厳選されたスパイスの調和を追求する欧風カレー専門レストランです。素材そのものの旨味を引き出す低温調理と、24時間以上かけて作り上げるフォンドボーを基本に、季節ごとに変わる新鮮な食材を活かした唯一無二のカレーをご提供しています。</p>
+                    <p>店内は落ち着いた照明と木目を基調としたインテリアで、ゆったりとした時間をお過ごしいただける空間となっております。特別な日のディナーはもちろん、日常の贅沢なランチタイムにもぜひご利用ください。</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="レストラン内装">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Notre Menu<span>メニュー</span></h2>
+            <div class="menu-categories">
+                <div class="menu-category active" data-category="curry">カレー</div>
+                <div class="menu-category" data-category="appetizer">前菜</div>
+                <div class="menu-category" data-category="dessert">デザート</div>
+                <div class="menu-category" data-category="drink">ドリンク</div>
+            </div>
+            <div class="menu-items curry-menu">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/curry1.jpg" alt="ビーフカレー">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>ブフ・ブルギニヨンカレー <span>¥2,400</span></h3>
+                        <p>赤ワインでマリネした国産牛肉をじっくり煮込んだ、深い味わいのカレー。ブルゴーニュ地方の伝統料理をカレーで表現しました。</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/curry2.jpg" alt="シーフードカレー">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>ブイヤベースカレー <span>¥2,600</span></h3>
+                        <p>マルセイユの伝統的な漁師のスープをヒントに、新鮮な魚介の旨味が凝縮した贅沢なシーフードカレー。サフランの香りが特徴です。</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/curry3.jpg" alt="野菜カレー">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>ラタトゥイユカレー <span>¥2,200</span></h3>
+                        <p>南フランスの太陽をたっぷり浴びた季節野菜を使った、ヘルシーな一品。野菜の甘みとスパイスのハーモニーをお楽しみください。</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/curry4.jpg" alt="子羊のカレー">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>アニョー・コンフィカレー <span>¥2,800</span></h3>
+                        <p>ハーブでマリネした仔羊をオイルでゆっくり火を通し、柔らかく仕上げたコンフィをカレーソースで。特別な日におすすめです。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- その他のメニューカテゴリはJSで切り替え表示 -->
+        </div>
+    </section>
+
+    <section id="chef" class="chef">
+        <div class="container">
+            <h2 class="section-title">Notre Chef<span>シェフ</span></h2>
+            <div class="chef-content">
+                <div class="chef-image">
+                    <img src="images/chef.jpg" alt="シェフの写真">
+                </div>
+                <div class="chef-text">
+                    <h3>橘 誠一郎 / Seiichiro Tachibana</h3>
+                    <p class="chef-title">Head Chef & Founder</p>
+                    <p>フランスの三ツ星レストランで10年間の修業を経て帰国。伝統的なフレンチの技法とスパイス使いを融合させた独自のカレーを追求しています。</p>
+                    <p>「カレーとは、単なる料理ではなく文化の融合であり、無限の可能性を秘めたキャンバスです」という哲学のもと、素材の持つ本来の魅力を最大限に引き出すことを大切にしています。</p>
+                    <div class="chef-signature">
+                        <img src="images/signature.png" alt="シェフのサイン">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galerie<span>ギャラリー</span></h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery1.jpg" alt="料理写真1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.jpg" alt="料理写真2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery3.jpg" alt="店内写真1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery4.jpg" alt="料理写真3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery5.jpg" alt="料理写真4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery6.jpg" alt="店内写真2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="access" class="access">
+        <div class="container">
+            <h2 class="section-title">Accès<span>アクセス</span></h2>
+            <div class="access-content">
+                <div class="access-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.55383456436!2d139.7036689!3d35.6652414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b857628235d%3A0xcdd8aef709a2b520!2z5riL6LC35Yy6!5e0!3m2!1sja!2sjp!4v1667835694876!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="access-info">
+                    <div class="info-item">
+                        <h3><i class="fas fa-map-marker-alt"></i> 住所</h3>
+                        <p>〒107-0062<br>東京都港区南青山X-X-X XXXビル 1F</p>
+                    </div>
+                    <div class="info-item">
+                        <h3><i class="fas fa-subway"></i> アクセス</h3>
+                        <p>東京メトロ銀座線・半蔵門線・千代田線「表参道駅」A4出口より徒歩5分</p>
+                    </div>
+                    <div class="info-item">
+                        <h3><i class="fas fa-clock"></i> 営業時間</h3>
+                        <p>ランチ　11:30〜15:00 (L.O.14:00)<br>ディナー 17:30〜22:00 (L.O.21:00)<br>定休日：月曜日（祝日の場合は翌日）</p>
+                    </div>
+                    <div class="info-item">
+                        <h3><i class="fas fa-phone"></i> お問い合わせ</h3>
+                        <p>03-XXXX-XXXX（予約優先制）</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2 class="section-title">Réservation<span>ご予約</span></h2>
+            <div class="reservation-content">
+                <p class="reservation-intro">ご予約は、お電話またはオンラインにて承っております。<br>特別な日のお食事や、大切な方との時間を最高のひとときにするお手伝いをさせてください。</p>
+                <form class="reservation-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">電話番号 <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">ご来店日 <span class="required">*</span></label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="time">ご来店時間 <span class="required">*</span></label>
+                            <select id="time" name="time" required>
+                                <option value="">選択してください</option>
+                                <optgroup label="ランチタイム">
+                                    <option value="11:30">11:30</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                </optgroup>
+                                <optgroup label="ディナータイム">
+                                    <option value="17:30">17:30</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">人数 <span class="required">*</span></label>
+                            <select id="guests" name="guests" required>
+                                <option value="">選択してください</option>
+                                <option value="1">1名</option>
+                                <option value="2">2名</option>
+                                <option value="3">3名</option>
+                                <option value="4">4名</option>
+                                <option value="5">5名</option>
+                                <option value="6">6名以上（ご相談ください）</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">ご要望など</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn">予約を確定する</button>
+                    </div>
+                </form>
+                <p class="reservation-note">※ 当日のご予約はお電話にてお願いいたします。<br>※ 個室のご予約は、2週間前までにお電話にてご連絡ください。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Maison de Curry</h2>
+                    <p>Cuisine Élégante</p>
+                </div>
+                <div class="footer-info">
+                    <p>〒107-0062 東京都港区南青山X-X-X XXXビル 1F</p>
+                    <p>TEL: 03-XXXX-XXXX</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Maison de Curry. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
